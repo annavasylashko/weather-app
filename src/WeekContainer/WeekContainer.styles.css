@@ -1,9 +1,9 @@
-.videoTag {
+.video-tag {
  position: fixed;
  top: 50%;
  left: 50%;
  width: 100vw;
- height: 100vh;
+ height: 115vh;
  object-fit: cover;
  transform: translate(-50%, -50%);
  pointer-events: none;

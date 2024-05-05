@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.day-card {
+  height: 75vh;
+  margin: 10vh 5vw;
+  padding: 80px;
+
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+  display: grid;
+  grid-template-areas:
+    'general-info .'
+    'day-main-info weather-properties'
+    '. .';
+  grid-auto-rows: 1fr;
+  column-gap: 60px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
+
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.general-info {
+  grid-area: general-info;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.city-name, .day-temp {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  letter-spacing: 0.5rem;
+}
+
+.card-date {
+  font-size: 20px;
+}
+
+.day-main-info {
+  grid-area: day-main-info;
+  display: flex;
+  gap: 40px;
+  margin-top: auto;
+}
+
+.card-description {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.weather-properties {
+  grid-area: weather-properties;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  row-gap: 50px;
+}

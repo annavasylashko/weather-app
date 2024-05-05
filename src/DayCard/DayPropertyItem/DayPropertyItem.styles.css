@@ -1,0 +1,47 @@
+.day-property-item {
+  width: 33%;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item-value {
+  font-size: 30px;
+  height: 36px;
+}
+
+.hourly-values {
+  display: flex;
+  gap: 2px;
+  align-items: end;
+  height: 36px;
+  width: fit-content;
+}
+
+.hourly-value {
+  background-color: white;
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.hourly-value:hover::before {
+  content: '';
+  border-left: 0.5px solid #fff;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+}
+
+.hourly-value:hover::after {
+  content: attr(data-after-content);
+  position: absolute;
+  width: 100px;
+  bottom: 50px;
+  left: -50px;
+}
